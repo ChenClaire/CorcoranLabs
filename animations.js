@@ -12,3 +12,9 @@ $(window).scroll(function() {
 $('.carousel').carousel({
   interval: false
 });
+
+
+function goTo(el) {
+     var ID = "#" + el;
+     $('body, html').animate({ scrollTop: $(ID).offset().top }, '700');
+ }

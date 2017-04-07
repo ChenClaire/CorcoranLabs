@@ -22,10 +22,10 @@
         </div>
         <div class="navigation">
             <ul>
-                <li><a href="">About Us</a></li>
+                <li><a onclick="goTo('about-us')">About Us</a></li>
                 <li><a href="">Blog</a></li>
-                <li><a href="">Hackathon</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a onclick="goTo('hackathon')">Hackathon</a></li>
+                <li><a onclick="goTo('contact')">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -43,7 +43,7 @@
             <div class="landing_info FadeIn-Text-Daley">We are a strategic product development group that builds the future of real estate.</div>
         </div>
     </div>
-    <div class="highlight-section">
+    <div class="highlight-section" id="about-us">
         <div class="item-wrapper">
             <div class="icon">
                 <svg viewBox="0 0 150.78 148.15">
@@ -237,13 +237,13 @@
             </div>
         </div>
     </div>
-    <div class="hackathon-section ">
+    <div class="hackathon-section" id="hackathon">
         <div class="FadeIn-Text title">
             We host Hackathon monthly, next Hackathon will be on Apr. 30, 2017
         </div>
         <button class="FadeIn-Text-Daley">Join our next hackathon</button>
     </div>
-    <div class="bkg-video-section ending">
+    <div class="bkg-video-section ending" id="contact">
         <div class="landing_background-wrapper">
             <video class="landing_background" preload="" muted="" autoplay="" loop="">
                 <source src="bkg-video/scene1_background.webm" type="video/webm">

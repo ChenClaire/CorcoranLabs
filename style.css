@@ -216,6 +216,7 @@ body .header .navigation ul li a {
   display: block;
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 body .beginning .landing_title {
   font-size: 67px;
