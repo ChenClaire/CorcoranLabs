@@ -18,3 +18,19 @@ function goTo(el) {
      var ID = "#" + el;
      $('body, html').animate({ scrollTop: $(ID).offset().top }, '700');
  }
+
+ $(window).bind('keydown', function(e){
+    if (e.keyCode == 37) {
+        console.log('left');
+    } else if (e.keyCode == 38) {
+        console.log('up');
+    } else if (e.keyCode == 39) {
+        console.log('right');
+    } else if (e.keyCode == 40) {
+        console.log('down');
+    }
+});
+
+ $(".mobile-menu-trigger").click(function(){
+    $(".navigation-mobile").toggle();
+ });
