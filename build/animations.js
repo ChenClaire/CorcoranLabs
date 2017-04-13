@@ -17,6 +17,7 @@ $('.carousel').carousel({
 function goTo(el) {
      var ID = "#" + el;
      $('body, html').animate({ scrollTop: $(ID).offset().top }, '700');
+     $(".navigation-mobile").hide("slide", { direction: "up" }, 400);
  }
 
  $(window).bind('keydown', function(e){

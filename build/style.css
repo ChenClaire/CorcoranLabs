@@ -184,15 +184,31 @@ body .bkg-video-section .text-over-video {
   position: absolute;
   color: white;
 }
+body .mobile-menu-trigger {
+  padding: 15px 20px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  display: none;
+  float: right;
+}
+@media only screen and (max-width: 700px) {
+  body .mobile-menu-trigger {
+    display: block;
+  }
+}
 body .navigation-mobile {
   background-color: #333333;
   display: none;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   z-index: 4000;
   text-align: center;
+}
+body .navigation-mobile .mobile-menu-trigger {
+  padding: 20px 40px;
 }
 body .navigation-mobile ul {
   list-style: none;
@@ -232,18 +248,6 @@ body .header .logo img {
 body .header .navigation {
   display: inline-block;
   float: right;
-}
-body .header .navigation .mobile-menu-trigger {
-  padding: 15px 20px;
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
-  display: none;
-}
-@media only screen and (max-width: 700px) {
-  body .header .navigation .mobile-menu-trigger {
-    display: block;
-  }
 }
 body .header .navigation ul {
   margin: 0px;
