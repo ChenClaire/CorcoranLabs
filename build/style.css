@@ -150,9 +150,9 @@ body .line {
   stroke-dashoffset: 1000;
   stroke-dasharray: 1000;
   fill: none;
-  stroke: #5e5e5e;
+  stroke: #8a8a8a;
   stroke-miterlimit: 10;
-  stroke-width: 2px;
+  stroke-width: 3px;
 }
 body .line-drawing {
   animation: drawing 4s forwards ease-in-out;
@@ -271,25 +271,50 @@ body .header .navigation ul li a {
 }
 body .beginning .landing_title {
   font-size: 67px;
+  width: 70%;
+  margin: auto;
+}
+@media only screen and (max-width: 1000px) {
+  body .beginning .landing_title {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 1440px) {
   body .beginning .landing_title {
-    font-size: calc(11px + 4vw);
+    font-size: calc(11px + 3vw);
   }
 }
 @media only screen and (max-width: 600px) {
   body .beginning .landing_title {
-    font-size: 28px;
+    font-size: 25px;
   }
 }
 body .beginning .landing_info {
-  font-size: calc(11px + 1vw);
+  font-size: calc(8px + 1vw);
   margin-top: 20px;
   font-weight: 300;
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 1000px) {
+  body .beginning .landing_info {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body .beginning .landing_info {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body .beginning .landing_info {
+    font-size: 14px;
+  }
 }
 @media only screen and (min-width: 1440px) {
   body .beginning .landing_info {
-    font-size: 25px;
+    font-size: 23px;
   }
 }
 body .highlight-section {
@@ -396,6 +421,11 @@ body .testimonial-section .carousel-indicators li .video-tag {
 body .hackathon-section {
   text-align: center;
   padding: 200px 100px;
+}
+@media only screen and (max-width: 600px) {
+  body .hackathon-section {
+    padding: 200px 30px;
+  }
 }
 body .hackathon-section .title {
   font-size: 25px;
