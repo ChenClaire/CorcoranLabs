@@ -150,9 +150,9 @@ body .line {
   stroke-dashoffset: 1000;
   stroke-dasharray: 1000;
   fill: none;
-  stroke: #8a8a8a;
+  stroke: #9c9c9c;
   stroke-miterlimit: 10;
-  stroke-width: 3px;
+  stroke-width: 4px;
 }
 body .line-drawing {
   animation: drawing 4s forwards ease-in-out;
@@ -240,7 +240,7 @@ body .header {
 }
 body .header .logo {
   display: inline-block;
-  padding: 15px 20px;
+  padding: 15px 20px 15px 20px;
 }
 body .header .logo img {
   height: 20px;
@@ -293,7 +293,7 @@ body .beginning .landing_info {
   font-size: calc(8px + 1vw);
   margin-top: 20px;
   font-weight: 300;
-  width: 60%;
+  width: 65%;
   margin: auto;
   margin-top: 30px;
 }
